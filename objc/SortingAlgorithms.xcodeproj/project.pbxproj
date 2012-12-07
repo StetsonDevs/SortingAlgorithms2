@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02EF5A16166FD2C600210E9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EF5A15166FD2C600210E9C /* Cocoa.framework */; };
+		02EF5A20166FD2C600210E9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02EF5A1E166FD2C600210E9C /* InfoPlist.strings */; };
+		02EF5A22166FD2C600210E9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF5A21166FD2C600210E9C /* main.m */; };
+		02EF5A26166FD2C600210E9C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 02EF5A24166FD2C600210E9C /* Credits.rtf */; };
+		02EF5A29166FD2C600210E9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF5A28166FD2C600210E9C /* AppDelegate.m */; };
+		02EF5A2C166FD2C600210E9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02EF5A2A166FD2C600210E9C /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02EF5A11166FD2C600210E9C /* SortingAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SortingAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EF5A15166FD2C600210E9C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		02EF5A18166FD2C600210E9C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		02EF5A19166FD2C600210E9C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		02EF5A1A166FD2C600210E9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		02EF5A1D166FD2C600210E9C /* SortingAlgorithms-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SortingAlgorithms-Info.plist"; sourceTree = "<group>"; };
+		02EF5A1F166FD2C600210E9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02EF5A21166FD2C600210E9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02EF5A23166FD2C600210E9C /* SortingAlgorithms-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SortingAlgorithms-Prefix.pch"; sourceTree = "<group>"; };
+		02EF5A25166FD2C600210E9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		02EF5A27166FD2C600210E9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		02EF5A28166FD2C600210E9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		02EF5A2B166FD2C600210E9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02EF5A0E166FD2C600210E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EF5A16166FD2C600210E9C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02EF5A06166FD2C600210E9C = {
+			isa = PBXGroup;
+			children = (
+				02EF5A1B166FD2C600210E9C /* SortingAlgorithms */,
+				02EF5A14166FD2C600210E9C /* Frameworks */,
+				02EF5A12166FD2C600210E9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02EF5A12166FD2C600210E9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02EF5A11166FD2C600210E9C /* SortingAlgorithms.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02EF5A14166FD2C600210E9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02EF5A15166FD2C600210E9C /* Cocoa.framework */,
+				02EF5A17166FD2C600210E9C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02EF5A17166FD2C600210E9C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02EF5A18166FD2C600210E9C /* AppKit.framework */,
+				02EF5A19166FD2C600210E9C /* CoreData.framework */,
+				02EF5A1A166FD2C600210E9C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		02EF5A1B166FD2C600210E9C /* SortingAlgorithms */ = {
+			isa = PBXGroup;
+			children = (
+				02EF5A27166FD2C600210E9C /* AppDelegate.h */,
+				02EF5A28166FD2C600210E9C /* AppDelegate.m */,
+				02EF5A2A166FD2C600210E9C /* MainMenu.xib */,
+				02EF5A1C166FD2C600210E9C /* Supporting Files */,
+			);
+			path = SortingAlgorithms;
+			sourceTree = "<group>";
+		};
+		02EF5A1C166FD2C600210E9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02EF5A1D166FD2C600210E9C /* SortingAlgorithms-Info.plist */,
+				02EF5A1E166FD2C600210E9C /* InfoPlist.strings */,
+				02EF5A21166FD2C600210E9C /* main.m */,
+				02EF5A23166FD2C600210E9C /* SortingAlgorithms-Prefix.pch */,
+				02EF5A24166FD2C600210E9C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02EF5A10166FD2C600210E9C /* SortingAlgorithms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02EF5A32166FD2C600210E9C /* Build configuration list for PBXNativeTarget "SortingAlgorithms" */;
+			buildPhases = (
+				02EF5A0D166FD2C600210E9C /* Sources */,
+				02EF5A0E166FD2C600210E9C /* Frameworks */,
+				02EF5A0F166FD2C600210E9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SortingAlgorithms;
+			productName = SortingAlgorithms;
+			productReference = 02EF5A11166FD2C600210E9C /* SortingAlgorithms.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02EF5A08166FD2C600210E9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Logan;
+			};
+			buildConfigurationList = 02EF5A0B166FD2C600210E9C /* Build configuration list for PBXProject "SortingAlgorithms" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 02EF5A06166FD2C600210E9C;
+			productRefGroup = 02EF5A12166FD2C600210E9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02EF5A10166FD2C600210E9C /* SortingAlgorithms */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02EF5A0F166FD2C600210E9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EF5A20166FD2C600210E9C /* InfoPlist.strings in Resources */,
+				02EF5A26166FD2C600210E9C /* Credits.rtf in Resources */,
+				02EF5A2C166FD2C600210E9C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02EF5A0D166FD2C600210E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EF5A22166FD2C600210E9C /* main.m in Sources */,
+				02EF5A29166FD2C600210E9C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02EF5A1E166FD2C600210E9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02EF5A1F166FD2C600210E9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		02EF5A24166FD2C600210E9C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02EF5A25166FD2C600210E9C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		02EF5A2A166FD2C600210E9C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02EF5A2B166FD2C600210E9C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02EF5A30166FD2C600210E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		02EF5A31166FD2C600210E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		02EF5A33166FD2C600210E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SortingAlgorithms/SortingAlgorithms-Prefix.pch";
+				INFOPLIST_FILE = "SortingAlgorithms/SortingAlgorithms-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		02EF5A34166FD2C600210E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SortingAlgorithms/SortingAlgorithms-Prefix.pch";
+				INFOPLIST_FILE = "SortingAlgorithms/SortingAlgorithms-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02EF5A0B166FD2C600210E9C /* Build configuration list for PBXProject "SortingAlgorithms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02EF5A30166FD2C600210E9C /* Debug */,
+				02EF5A31166FD2C600210E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02EF5A32166FD2C600210E9C /* Build configuration list for PBXNativeTarget "SortingAlgorithms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02EF5A33166FD2C600210E9C /* Debug */,
+				02EF5A34166FD2C600210E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02EF5A08166FD2C600210E9C /* Project object */;
+}
