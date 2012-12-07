@@ -18,18 +18,16 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    NSMutableArray *items = [[NSMutableArray alloc] init];
-    [items addObject:[NSNumber numberWithInt:6135]];
-    [items addObject:[NSNumber numberWithInt:9123]];
-    [items addObject:[NSNumber numberWithInt:1404]];
-    [items addObject:[NSNumber numberWithInt:2973]];
-    [items addObject:[NSNumber numberWithInt:1862]];
+    NSMutableArray *ary = [[NSMutableArray alloc] init];
+    [ary addObject:[NSNumber numberWithInt:5]];
+    [ary addObject:[NSNumber numberWithInt:43]];
+    [ary addObject:[NSNumber numberWithInt:72]];
+    [ary addObject:[NSNumber numberWithInt:95]];
+    [ary addObject:[NSNumber numberWithInt:1]];
     
-    NSLog(@"%@", items);
+    ary = [NSMutableArray arrayWithArray:[self radixSort:ary]];
     
-    items = [self quickSort:items];
-    
-    NSLog(@"%@", items);
+    NSLog(@"%@", ary);
 }
 
 - (NSMutableArray *) radixSort: (NSMutableArray *) items
@@ -141,6 +139,17 @@
     if (i < high)
         [self quickSort:items with:i and:high];
     return items;
+}
+
+-(NSMutableArray *) generateRandomNumbersWith:(int) size and: (int) places
+{
+    NSMutableArray *rNums = [[NSMutableArray alloc] init];
+        
+    for (int i = 0; i < size; i++)
+     {
+        [rNums addObject:[NSNumber numberWithInt:(rand() % (int)pow(10, places))]];
+     }
+    return rNums;
 }
 
 @end

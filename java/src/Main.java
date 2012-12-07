@@ -11,10 +11,16 @@ public class Main {
 
 	public Main() 
 	{
-		int size 	= 100;
-		int max 	= 9;
+		int size 	= 100000;
+		int max 	= 6;
 		long startTime = System.nanoTime(); 
 		Integer[] itms = generateRandomNumbers(size, max);
+	
+		for (int i = 0; i < itms.length; i ++)
+		{
+			System.out.print(itms[i] + ", ");
+		}
+		
 		Integer[] unsortedRadix = itms.clone();
 		Integer[] unsortedQuick = itms.clone();
 		Integer[] unsortedMerge = itms.clone();
