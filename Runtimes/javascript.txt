@@ -80,3 +80,167 @@ mergesort:
 
 
 ------------------------------------------------
+quicksort:
+	random
+		Array[100] test 1: 0ms
+		Array[100] test 2: 0ms
+		Array[100] test 3: 0ms
+		Array[100] test 4: 0ms
+		Array[100] test 5: 0ms
+		Average: 0
+		Array[1000] test 1: 0ms
+		Array[1000] test 2: 0ms
+		Array[1000] test 3: 0ms
+		Array[1000] test 4: 0ms
+		Array[1000] test 5: 0ms
+		Average: 0
+		Array[10000] test 1: 1ms
+		Array[10000] test 2: 1ms
+		Array[10000] test 3: 1ms
+		Array[10000] test 4: 1ms
+		Array[10000] test 5: 1ms
+		Average: 1
+		Array[100000] test 1: 11ms
+		Array[100000] test 2: 11ms
+		Array[100000] test 3: 11ms
+		Array[100000] test 4: 11ms
+		Array[100000] test 5: 11ms
+		Average: 11
+
+	sorted
+		Array[100] test 1: 0ms
+		Array[100] test 2: 0ms
+		Array[100] test 3: 0ms
+		Array[100] test 4: 0ms
+		Array[100] test 5: 0ms
+		Average: 0
+		Array[1000] test 1: 0ms
+		Array[1000] test 2: 0ms
+		Array[1000] test 3: 0ms
+		Array[1000] test 4: 0ms
+		Array[1000] test 5: 0ms
+		Average: 0
+		Array[10000] test 1: 0ms
+		Array[10000] test 2: 0ms
+		Array[10000] test 3: 1ms
+		Array[10000] test 4: 0ms
+		Array[10000] test 5: 1ms
+		Average: 0.4
+		Array[100000] test 1: 4ms
+		Array[100000] test 2: 4ms
+		Array[100000] test 3: 5ms
+		Array[100000] test 4: 4ms
+		Array[100000] test 5: 4ms
+		Average: 4.2
+
+	reversed
+		Array[100] test 1: 0ms
+		Array[100] test 2: 0ms
+		Array[100] test 3: 0ms
+		Array[100] test 4: 0ms
+		Array[100] test 5: 0ms
+		Average: 0
+		Array[1000] test 1: 0ms
+		Array[1000] test 2: 0ms
+		Array[1000] test 3: 0ms
+		Array[1000] test 4: 0ms
+		Array[1000] test 5: 0ms
+		Average: 0
+		Array[10000] test 1: 0ms
+		Array[10000] test 2: 0ms
+		Array[10000] test 3: 1ms
+		Array[10000] test 4: 0ms
+		Array[10000] test 5: 0ms
+		Average: 0.2
+		Array[100000] test 1: 4ms
+		Array[100000] test 2: 4ms
+		Array[100000] test 3: 4ms
+		Array[100000] test 4: 4ms
+		Array[100000] test 5: 4ms
+		Average: 4
+
+
+
+------------------------------------------------
+radixsort:
+	random
+		Array[100] test 1: 0ms
+		Array[100] test 2: 0ms
+		Array[100] test 3: 0ms
+		Array[100] test 4: 1ms
+		Array[100] test 5: 0ms
+		Average: 0.2
+		Array[1000] test 1: 0ms
+		Array[1000] test 2: 1ms
+		Array[1000] test 3: 0ms
+		Array[1000] test 4: 1ms
+		Array[1000] test 5: 0ms
+		Average: 0.4
+		Array[10000] test 1: 3ms
+		Array[10000] test 2: 2ms
+		Array[10000] test 3: 3ms
+		Array[10000] test 4: 2ms
+		Array[10000] test 5: 2ms
+		Average: 2.4
+		Array[100000] test 1: 38ms
+		Array[100000] test 2: 29ms
+		Array[100000] test 3: 32ms
+		Array[100000] test 4: 28ms
+		Array[100000] test 5: 32ms
+		Average: 31.8
+
+	sorted
+		Array[100] test 1: 0ms
+		Array[100] test 2: 0ms
+		Array[100] test 3: 0ms
+		Array[100] test 4: 0ms
+		Array[100] test 5: 0ms
+		Average: 0
+		Array[1000] test 1: 1ms
+		Array[1000] test 2: 0ms
+		Array[1000] test 3: 0ms
+		Array[1000] test 4: 0ms
+		Array[1000] test 5: 1ms
+		Average: 0.4
+		Array[10000] test 1: 2ms
+		Array[10000] test 2: 3ms
+		Array[10000] test 3: 2ms
+		Array[10000] test 4: 3ms
+		Array[10000] test 5: 2ms
+		Average: 2.4
+		Array[100000] test 1: 28ms
+		Array[100000] test 2: 31ms
+		Array[100000] test 3: 28ms
+		Array[100000] test 4: 32ms
+		Array[100000] test 5: 27ms
+		Average: 29.2
+
+	reversed
+		Array[100] test 1: 0ms
+		Array[100] test 2: 0ms
+		Array[100] test 3: 0ms
+		Array[100] test 4: 0ms
+		Array[100] test 5: 1ms
+		Average: 0.2
+		Array[1000] test 1: 0ms
+		Array[1000] test 2: 0ms
+		Array[1000] test 3: 0ms
+		Array[1000] test 4: 1ms
+		Array[1000] test 5: 0ms
+		Average: 0.2
+		Array[10000] test 1: 2ms
+		Array[10000] test 2: 2ms
+		Array[10000] test 3: 4ms
+		Array[10000] test 4: 2ms
+		Array[10000] test 5: 3ms
+		Average: 2.6
+		Array[100000] test 1: 30ms
+		Array[100000] test 2: 27ms
+		Array[100000] test 3: 31ms
+		Array[100000] test 4: 28ms
+		Array[100000] test 5: 31ms
+		Average: 29.4
+
+
+
+------------------------------------------------
