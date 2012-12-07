@@ -1,0 +1,45 @@
+Radix Sort - Random 100: 0 milliseconds
+Radix Sort - Sorted 100: 0 milliseconds
+Radix Sort - Reversed 100: 0 milliseconds
+
+Radix Sort - Random 1000: 1 milliseconds
+Radix Sort - Sorted 1000: 1 milliseconds
+Radix Sort - Reversed 1000: 1 milliseconds
+
+Radix Sort - Random 10000: 10 milliseconds
+Radix Sort - Sorted 10000: 10 milliseconds
+Radix Sort - Reversed 10000: 10 milliseconds
+
+Radix Sort - Random 100000: 107 milliseconds
+Radix Sort - Sorted 100000: 114 milliseconds
+Radix Sort - Reversed 100000: 113 milliseconds
+
+Mergesort - Random 100: 0 milliseconds
+Mergesort - Sorted 100: 0 milliseconds
+Mergesort - Reversed 100: 0 milliseconds
+
+Mergesort - Random 1000: 15 milliseconds
+Mergesort - Sorted 1000: 14 milliseconds
+Mergesort - Reversed 1000: 14 milliseconds
+
+Mergesort - Random 10000: 1406 milliseconds
+Mergesort - Sorted 10000: 22917 milliseconds
+Mergesort - Reversed 10000: 32432 milliseconds
+
+// Missing Mergesort 100000 data
+
+Quicksort - Random 100: 0 milliseconds
+Quicksort - Sorted 100: 0 milliseconds
+Quicksort - Reversed 100: 0 milliseconds
+
+Quicksort - Random 1000: 0 milliseconds
+Quicksort - Sorted 1000: 0 milliseconds
+Quicksort - Reversed 1000: 0 milliseconds
+
+Quicksort - Random 10000: 10 milliseconds
+Quicksort - Sorted 10000: 5 milliseconds
+Quicksort - Reversed 10000: 4 milliseconds
+
+Quicksort - Random 100000: 129 milliseconds
+Quicksort - Sorted 100000: 48 milliseconds
+Quicksort - Reversed 100000: 56 milliseconds

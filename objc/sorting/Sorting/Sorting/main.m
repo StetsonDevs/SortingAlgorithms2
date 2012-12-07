@@ -32,7 +32,43 @@ NSString *rev100000 = @"999983, 999962, 999950, 999948, 999939, 999929, 999924, 
 
 void load()
 {
-    // Radix
+//    // Radix
+//    for (int i = 0; i < 12; i ++)
+//     {
+//        NSMutableArray *toSort = [[NSMutableArray alloc] init];
+//        NSString *currentList = @"";
+//        switch (i)
+//        {
+//            case 0: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random100]]; currentList = @"Random 100"; break;
+//            case 1: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted100]]; currentList = @"Sorted 100"; break;
+//            case 2: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev100]];    currentList = @"Reversed 100"; break;
+//            case 3: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random1000]];currentList = @"Random 1000";break;
+//            case 4: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted1000]];currentList = @"Sorted 1000";break;
+//            case 5: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev1000]];   currentList = @"Reversed 1000";break;
+//            case 6: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random10000]];currentList = @"Random 10000";break;
+//            case 7: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted10000]];currentList = @"Sorted 10000";break;
+//            case 8: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev10000]];  currentList = @"Reversed 10000";break;
+//            case 9: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random100000]];currentList = @"Random 100000";break;
+//            case 10: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted100000]];currentList = @"Sorted 100000";break;
+//            case 11: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev100000]];currentList = @"Reversed 100000";break;
+//        }
+//        long duration = 0;
+//        for (int j = 0; j < 5; j++)
+//         {
+//            NSMutableArray *ary = [[NSMutableArray alloc] initWithArray: toSort];
+//            double startTime = [[NSDate date] timeIntervalSince1970] * 1000;
+//            ary = [sorting radixSort:ary];
+//            double endTime = [[NSDate date] timeIntervalSince1970] * 1000;
+//            duration += endTime - startTime;
+//            [ary release];
+//         }
+//        long average = duration / 5;
+//        if (i%3 == 0)
+//            NSLog(@"\n");
+//        NSLog(@"Radix Sort - %@: %ld milliseconds", currentList, average);
+//        [toSort release];
+//     }
+    // Merge
     for (int i = 0; i < 12; i ++)
      {
         NSMutableArray *toSort = [[NSMutableArray alloc] init];
@@ -57,90 +93,52 @@ void load()
          {
             NSMutableArray *ary = [[NSMutableArray alloc] initWithArray: toSort];
             double startTime = [[NSDate date] timeIntervalSince1970] * 1000;
-            ary = [sorting radixSort:ary];
-            double endTime = [[NSDate date] timeIntervalSince1970] * 1000;
-            duration += endTime - startTime;
-            [ary release];
-         }
-        long average = duration / 5;
-        if (i%3 == 0)
-            NSLog(@"\n");
-        NSLog(@"Radix Sort - %@: %ld milliseconds", currentList, average);
-        [toSort release];
-     }
-//    // Merge
-    for (int i = 0; i < 12; i ++)
-     {
-        NSMutableArray *toSort = [[NSMutableArray alloc] init];
-        NSString *currentList = @"";
-        switch (i)
-      {
-          case 0: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random100]]; currentList = @"Random 100"; break;
-          case 1: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted100]]; currentList = @"Sorted 100"; break;
-          case 2: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev100]];    currentList = @"Reversed 100"; break;
-          case 3: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random1000]];currentList = @"Random 1000";break;
-          case 4: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted1000]];currentList = @"Sorted 1000";break;
-          case 5: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev1000]];   currentList = @"Reversed 1000";break;
-          case 6: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random10000]];currentList = @"Random 10000";break;
-          case 7: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted10000]];currentList = @"Sorted 10000";break;
-          case 8: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev10000]];  currentList = @"Reversed 10000";break;
-          case 9: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random100000]];currentList = @"Random 100000";break;
-          case 10: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted100000]];currentList = @"Sorted 100000";break;
-          case 11: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev100000]];currentList = @"Reversed 100000";break;
-      }
-        long duration = 0;
-        for (int j = 0; j < 5; j++)
-         {
-            NSMutableArray *ary = [[NSMutableArray alloc] initWithArray: toSort];
-            double startTime = [[NSDate date] timeIntervalSince1970] * 1000;
             ary = [sorting mergeSort:ary];
             double endTime = [[NSDate date] timeIntervalSince1970] * 1000;
             duration += endTime - startTime;
             [ary release];
-
          }
         long average = duration / 5;
         if (i%3 == 0)
             NSLog(@"\n");
         NSLog(@"Mergesort - %@: %ld milliseconds", currentList, average);
         [toSort release];
-
      }
-    // Quick
-    for (int i = 0; i < 12; i ++)
-     {
-        NSMutableArray *toSort = [[NSMutableArray alloc] init];
-        NSString *currentList = @"";
-        switch (i)
-      {
-          case 0: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random100]]; currentList = @"Random 100"; break;
-          case 1: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted100]]; currentList = @"Sorted 100"; break;
-          case 2: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev100]];    currentList = @"Reversed 100"; break;
-          case 3: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random1000]];currentList = @"Random 1000";break;
-          case 4: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted1000]];currentList = @"Sorted 1000";break;
-          case 5: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev1000]];   currentList = @"Reversed 1000";break;
-          case 6: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random10000]];currentList = @"Random 10000";break;
-          case 7: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted10000]];currentList = @"Sorted 10000";break;
-          case 8: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev10000]];  currentList = @"Reversed 10000";break;
-          case 9: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random100000]];currentList = @"Random 100000";break;
-          case 10: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted100000]];currentList = @"Sorted 100000";break;
-          case 11: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev100000]];currentList = @"Reversed 100000";break;
-      }
-        long duration = 0;
-        for (int j = 0; j < 5; j++)
-         {
-            NSMutableArray *ary = [[NSMutableArray alloc] initWithArray: toSort];
-            double startTime = [[NSDate date] timeIntervalSince1970] * 1000;
-            ary = [sorting quickSort:ary];
-            double endTime = [[NSDate date] timeIntervalSince1970] * 1000;
-            duration += endTime - startTime;
-            [ary release];
-         }
-        long average = duration / 5;
-        if (i%3 == 0)
-            NSLog(@"\n");
-        NSLog(@"Quicksort - %@: %ld milliseconds", currentList, average);
-     }
+//    // Quick
+//    for (int i = 0; i < 12; i ++)
+//     {
+//        NSMutableArray *toSort = [[NSMutableArray alloc] init];
+//        NSString *currentList = @"";
+//        switch (i)
+//      {
+//          case 0: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random100]]; currentList = @"Random 100"; break;
+//          case 1: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted100]]; currentList = @"Sorted 100"; break;
+//          case 2: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev100]];    currentList = @"Reversed 100"; break;
+//          case 3: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random1000]];currentList = @"Random 1000";break;
+//          case 4: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted1000]];currentList = @"Sorted 1000";break;
+//          case 5: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev1000]];   currentList = @"Reversed 1000";break;
+//          case 6: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random10000]];currentList = @"Random 10000";break;
+//          case 7: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted10000]];currentList = @"Sorted 10000";break;
+//          case 8: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev10000]];  currentList = @"Reversed 10000";break;
+//          case 9: toSort = [NSMutableArray arrayWithArray:[sorting splitString:random100000]];currentList = @"Random 100000";break;
+//          case 10: toSort = [NSMutableArray arrayWithArray:[sorting splitString:sorted100000]];currentList = @"Sorted 100000";break;
+//          case 11: toSort = [NSMutableArray arrayWithArray:[sorting splitString:rev100000]];currentList = @"Reversed 100000";break;
+//      }
+//        long duration = 0;
+//        for (int j = 0; j < 5; j++)
+//         {
+//            NSMutableArray *ary = [[NSMutableArray alloc] initWithArray: toSort];
+//            double startTime = [[NSDate date] timeIntervalSince1970] * 1000;
+//            ary = [sorting quickSort:ary];
+//            double endTime = [[NSDate date] timeIntervalSince1970] * 1000;
+//            duration += endTime - startTime;
+//            [ary release];
+//         }
+//        long average = duration / 5;
+//        if (i%3 == 0)
+//            NSLog(@"\n");
+//        NSLog(@"Quicksort - %@: %ld milliseconds", currentList, average);
+//     }
 }
 
 + (NSMutableArray *) radixSort: (NSMutableArray *) items
