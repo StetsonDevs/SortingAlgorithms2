@@ -14,7 +14,7 @@ public class Main {
 		int size 	= 100;
 		int max 	= 9;
 		long startTime = System.nanoTime(); 
-		Integer[] itms = {44, 93, 13, 82, 65};//generateRandomNumbers(size, max);
+		Integer[] itms = generateRandomNumbers(size, max);
 		Integer[] unsortedRadix = itms.clone();
 		Integer[] unsortedQuick = itms.clone();
 		Integer[] unsortedMerge = itms.clone();
