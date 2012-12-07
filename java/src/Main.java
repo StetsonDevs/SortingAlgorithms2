@@ -15,11 +15,6 @@ public class Main {
 		int max 	= 6;
 		long startTime = System.nanoTime(); 
 		Integer[] itms = generateRandomNumbers(size, max);
-	
-		for (int i = 0; i < itms.length; i ++)
-		{
-			System.out.print(itms[i] + ", ");
-		}
 		
 		Integer[] unsortedRadix = itms.clone();
 		Integer[] unsortedQuick = itms.clone();
