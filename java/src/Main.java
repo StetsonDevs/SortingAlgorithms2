@@ -51,15 +51,16 @@ public class Main {
 			long duration = 0;
 			for (int j = 0; j < 5; j++)
 			{
-				long startTime = System.nanoTime(); 
-				toSort = radixSort(toSort);
-				long endTime = System.nanoTime();
+				Integer[] ary = toSort.clone();
+				long startTime = System.currentTimeMillis(); 
+				ary = radixSort(ary);
+				long endTime = System.currentTimeMillis();
 				duration += endTime - startTime;
 			}
 			long average = duration / 5;
 			if (i%3 == 0)
 				System.out.println();
-			System.out.println("Radix Sort - " + currentList + ": " + average + " nanoseconds");
+			System.out.println("Radix Sort - " + currentList + ": " + average + " milliseconds");
 		}
 		// Merge
 		for (int i = 0; i < 12; i ++)
@@ -84,15 +85,16 @@ public class Main {
 			long duration = 0;
 			for (int j = 0; j < 5; j++)
 			{
-				long startTime = System.nanoTime(); 
-				toSort = mergesort(toSort);
-				long endTime = System.nanoTime();
+				Integer[] ary = toSort.clone();
+				long startTime = System.currentTimeMillis();//nanoTime(); 
+				ary = mergesort(ary);
+				long endTime = System.currentTimeMillis();
 				duration += endTime - startTime;
 			}
-			long average = duration / 5;
+			long average = (duration / 5) ;
 			if (i%3 == 0)
 				System.out.println();
-			System.out.println("Mergesort - " + currentList + ": " + average + " nanoseconds");
+			System.out.println("Mergesort - " + currentList + ": " + average + " milliseconds");
 		}
 		// Quicksort
 		for (int i = 0; i < 12; i ++)
@@ -117,15 +119,16 @@ public class Main {
 			long duration = 0;
 			for (int j = 0; j < 5; j++)
 			{
-				long startTime = System.nanoTime(); 
-				toSort = quicksort(toSort);
-				long endTime = System.nanoTime();
+				Integer[] ary = toSort.clone();
+				long startTime = System.currentTimeMillis(); 
+				ary = quicksort(ary);
+				long endTime = System.currentTimeMillis();
 				duration += endTime - startTime;
 			}
 			long average = duration / 5;
 			if (i%3 == 0)
 				System.out.println();
-			System.out.println("Quicksort - " + currentList + ": " + average + " nanoseconds");
+			System.out.println("Quicksort - " + currentList + ": " + average + " milliseconds");
 		}
 	}
 
@@ -264,6 +267,5 @@ public class Main {
 			toInts[i] = Integer.parseInt(toArray[i]);
 		}
 		return toInts;
-		
 	}
 }
