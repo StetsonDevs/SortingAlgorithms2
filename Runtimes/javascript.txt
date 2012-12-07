@@ -1,0 +1,82 @@
+mergesort:
+	random
+		Array[100] test 1: 1ms
+		Array[100] test 2: 1ms
+		Array[100] test 3: 0ms
+		Array[100] test 4: 0ms
+		Array[100] test 5: 0ms
+		Average: 0.4ms
+		Array[1000] test 1: 8ms
+		Array[1000] test 2: 6ms
+		Array[1000] test 3: 5ms
+		Array[1000] test 4: 6ms
+		Array[1000] test 5: 6ms
+		Average: 6.2ms
+		Array[10000] test 1: 538ms
+		Array[10000] test 2: 535ms
+		Array[10000] test 3: 543ms
+		Array[10000] test 4: 543ms
+		Array[10000] test 5: 541ms
+		Average: 540ms
+		Array[100000] test 1: 54719ms
+		Array[100000] test 2: 56908ms
+		Array[100000] test 3: 57063ms
+		Array[100000] test 4: 56947ms
+		Array[100000] test 5: 58033ms
+		Average: 56734ms
+
+	sorted
+		Array[100] test 1: 0ms
+		Array[100] test 2: 0ms
+		Array[100] test 3: 0ms
+		Array[100] test 4: 0ms
+		Array[100] test 5: 0ms
+		Average: 0ms
+		Array[1000] test 1: 6ms
+		Array[1000] test 2: 6ms
+		Array[1000] test 3: 6ms
+		Array[1000] test 4: 6ms
+		Array[1000] test 5: 6ms
+		Average: 6ms
+		Array[10000] test 1: 626ms
+		Array[10000] test 2: 621ms
+		Array[10000] test 3: 620ms
+		Array[10000] test 4: 623ms
+		Array[10000] test 5: 624ms
+		Average: 622.8ms
+		Array[100000] test 1: 63908ms
+		Array[100000] test 2: 63868ms
+		Array[100000] test 3: 63864ms
+		Array[100000] test 4: 63896ms
+		Array[100000] test 5: 63644ms
+		Average: 63836ms
+
+	reversed
+		Array[100] test 1: 0ms
+		Array[100] test 2: 0ms
+		Array[100] test 3: 0ms
+		Array[100] test 4: 0ms
+		Array[100] test 5: 0ms
+		Average: 0ms
+		Array[1000] test 1: 5ms
+		Array[1000] test 2: 5ms
+		Array[1000] test 3: 5ms
+		Array[1000] test 4: 5ms
+		Array[1000] test 5: 5ms
+		Average: 5ms
+		Array[10000] test 1: 504ms
+		Array[10000] test 2: 506ms
+		Array[10000] test 3: 501ms
+		Array[10000] test 4: 502ms
+		Array[10000] test 5: 498ms
+		Average: 502.2ms
+		Array[100000] test 1: 52274ms
+		Array[100000] test 2: 52187ms
+		Array[100000] test 3: 52222ms
+		Array[100000] test 4: 52226ms
+		Array[100000] test 5: 52194ms
+		Average: 52220.6ms
+
+
+
+------------------------------------------------
